@@ -4,7 +4,7 @@
  *
  * description Using puts
  *
- * return nothing at all
+ * return: does not return nothing at all
 */
 
 int main(void)
