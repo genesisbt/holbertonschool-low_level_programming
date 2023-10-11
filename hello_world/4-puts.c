@@ -2,7 +2,7 @@
 /**
  * main - excersise 4
  *
- * description Using puts
+ * Description: Using puts
  *
  * return: does not return nothing at all
 */
