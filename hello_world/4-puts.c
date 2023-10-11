@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
  * main - excersise 4
- * 
+ *
  * description Using puts
  *
  * return nothing at all
