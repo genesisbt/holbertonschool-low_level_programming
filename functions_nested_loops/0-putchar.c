@@ -7,7 +7,7 @@
  * Return: does not return nothing at all
  */
 
-int main(void)
+int imprimir(void)
 {
 	_putchar('_');
 	_putchar('p');
