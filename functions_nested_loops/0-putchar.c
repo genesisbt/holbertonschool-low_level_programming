@@ -6,7 +6,18 @@
  *
  * Return: does not return nothing at all
  */
-
+int main(void)
+{
+	imprimir();
+	return (0);
+}
+/**
+ * imprimir - excercise zero
+ *
+ * Description: firs use of header files
+ *
+ * Return: does not return nothing at all
+ */
 int imprimir(void)
 {
 	_putchar('_');
