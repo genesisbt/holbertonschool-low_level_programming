@@ -1,8 +1,8 @@
 #include <main.h>
 /**
- * main - excercise
+ * main - excercise zero
  *
- * Description: Using puts
+ * Description: firs use of header files
  *
  * Return: does not return nothing at all
  */
