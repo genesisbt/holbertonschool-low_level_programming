@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
  * main - excercise
  *
@@ -10,10 +10,10 @@
 int main(void)
 {
 	char letra;
-	for (letra = "a" ; letra <= "z" ; c++)
+	for (letra = 'a' ; letra <= 'z'; letra++)
 	{
 	putchar(letra);
 	}
-putchar(\n)
+putchar('\n');
 return (0);
 }
