@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - excercise one
+ * print_alphabet - excercise one
  *
  * Description: functions nested loops
  *
@@ -11,7 +11,7 @@ int print_alphabet(void)
 {
 	char letra;
 
-	for (letra = 'z' ; letra >= 'a'; letra--)
+	for (letra = 'a' ; letra <= 'z'; letra++)
 	{
 		_putchar (letra);
 	}
