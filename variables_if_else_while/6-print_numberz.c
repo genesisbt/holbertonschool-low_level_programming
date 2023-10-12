@@ -9,10 +9,11 @@
 
 int main(void)
 {
-	char num;
+	int num;
 
-	for (num = '0'; num <= '9'; num++)
-	{
+	for (num = 0; num <= 9; num++)
+	{	
+		char digit = num + '0';
 		putchar(num);
 	}
 
