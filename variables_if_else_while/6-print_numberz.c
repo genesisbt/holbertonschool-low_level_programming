@@ -13,8 +13,7 @@ int main(void)
 
 	for (num = 0; num <= 9; num++)
 	{	
-		char numchar = num + '0';
-		putchar(numchar);
+		putchar(num + '0');
 	}
 
 putchar('\n');
