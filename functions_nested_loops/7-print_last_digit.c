@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_last_digit - excercise five
+ * print_last_digit - excercise
  * @n: char
  *
  * Description: Absolute Value
@@ -12,6 +12,5 @@ int print_last_digit(int n)
 	{
 		n = n % 10;
 		_putchar (n);
-		return (0);
-
+		return (n);
 	}
