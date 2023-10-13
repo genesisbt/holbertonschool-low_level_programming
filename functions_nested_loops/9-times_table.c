@@ -28,7 +28,7 @@ for (num1 = 0 ; num1 < 10 ; num1++)
 		}
 	_putchar((resultado % 10) + '0');
 		_putchar(',');
-		if (espacio2 ==0)
+		if (espacio2 == 0)
 		_putchar(' ');
 		_putchar(' ');
 		espacio2 = 0;
