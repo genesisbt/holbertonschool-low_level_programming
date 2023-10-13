@@ -1,15 +1,14 @@
 #include "main.h"
 /**
- * add - excercise ten
- * @a: int
- * @b: int
+ * print_to_98 - excercise ten
+ * @n: int
  *
  * Description: functions nested loops
  *
  * Return: does not return nothing at all
  */
 
-int add(int n)
+int print_to_98(int n)
 {
 if (n == 98)
 	_putchar(n + '0');
