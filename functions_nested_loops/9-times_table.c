@@ -28,12 +28,12 @@ for (num1 = 0 ; num1 < 10 ; num1++)
 		if (num1 * (num2 + 1) > 10)
 			espacio2 = 1;
 	_putchar((resultado % 10) + '0');
-		_putchar(',');
 		if (num2 != 9)
 		{
-		if (espacio2 == 0)
-		_putchar(' ');
-		_putchar(' ');
+			_putchar(',');
+			if (espacio2 == 0)
+				_putchar(' ');
+			_putchar(' ');
 		}
 		espacio2 = 0;
 	}
