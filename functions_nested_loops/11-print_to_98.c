@@ -25,6 +25,6 @@ if (n > 98)
 		printf("%d, ", n);
 	}
 }
-printf("98/n");
+printf("98\n");
 return (0);
 }
