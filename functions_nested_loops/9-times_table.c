@@ -13,6 +13,7 @@ int times_table(void)
 	int num2;
 	int resultado;
 	int d1;
+	int espacio2;
 
 for (num1 = 0 ; num1 < 10 ; num1++)
 {
@@ -23,11 +24,14 @@ for (num1 = 0 ; num1 < 10 ; num1++)
 		{
 			d1 = resultado / 10;
 			_putchar(d1 + '0');
+			espacio2 = 1;
 		}
 	_putchar((resultado % 10) + '0');
 		_putchar(',');
+		if (espacio2 ==0)
 		_putchar(' ');
 		_putchar(' ');
+		espacio2 = 0;
 	}
 _putchar ('\n');
 }
