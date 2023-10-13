@@ -24,8 +24,9 @@ for (num1 = 0 ; num1 < 10 ; num1++)
 		{
 			d1 = resultado / 10;
 			_putchar(d1 + '0');
-			espacio2 = 1;
 		}
+		if (num1 * (num2 + 1) > 10)
+			espacio2 = 1;
 	_putchar((resultado % 10) + '0');
 		_putchar(',');
 		if (espacio2 == 0)
