@@ -43,5 +43,5 @@ for (hora = 0 ; hora < 24 ; hora++)
 	}
 
 }
-return 0;
+return (0);
 }
