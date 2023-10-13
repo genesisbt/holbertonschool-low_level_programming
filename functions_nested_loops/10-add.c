@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _add - excercise ten
+ * add - excercise ten
  * @a: int
  * @b: int
  *
@@ -9,7 +9,7 @@
  * Return: does not return nothing at all
  */
 
-int _add(int a, int b)
+int add(int a, int b)
 {
 	return (a + b);
 }
