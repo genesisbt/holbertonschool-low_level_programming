@@ -13,13 +13,13 @@ int i;
 int j;
 int k;
 
-    for (int i = 0; i < size; i++) 
+    for (i = 0; i < size; i++) 
     {
-        for (int j = 0; j < size - i - 1; j++) 
+        for (j = 0; j < size - i - 1; j++) 
 	{
             putchar(' ');
         }
-        for (int k = 0; k < i + 1; k++) 
+        for (k = 0; k < i + 1; k++) 
 	{
             putchar('#');
         }
