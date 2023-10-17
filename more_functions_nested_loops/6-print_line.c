@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * more_numbers - excercise five variables
+ * print_line - excercise five variables
+ * @n: first input
  *
  * Description: one to ten
  *
