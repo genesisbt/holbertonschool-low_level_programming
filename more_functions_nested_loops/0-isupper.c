@@ -11,7 +11,7 @@ int _isupper(int c)
 {
 int b;
 
-	if (c >= 'A' && c <= 'B')
+	if (c >= 'A' && c <= 'Z')
 {
 	b = 1;
 }
