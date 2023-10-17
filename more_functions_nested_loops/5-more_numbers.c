@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * print_most_numbers - excercise five variables
+ * more_numbers - excercise five variables
  *
  * Description: one to ten
  *
  * Return: does not return nothing at all
  */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
 int a = 0;
 
