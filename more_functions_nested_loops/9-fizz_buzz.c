@@ -20,7 +20,7 @@ for (a = 1; a <= 100; a++)
 	else if (a % 3 == 0)
 		printf("Fizz ");
 	else
-		printf("%d ", a)
+		printf("%d ", a);
 	}
 printf("\n");
 return (0);
