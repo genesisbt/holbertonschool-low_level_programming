@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - excercise five variables
- *
+ * @c: entry one
  * Description: one to ten
  *
  * Return: does not return nothing at all
@@ -9,7 +9,7 @@
 
 int main(int c)
 {
-int b;	
+int b;
 
 	if (c >= 'A' && c <= 'B')
 {
