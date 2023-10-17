@@ -16,10 +16,14 @@ int c;
 
 for (a = 1 ; a <= size ; a++)
 	{
-	for (c = 1 ; c <= size c++)
-		println(" ");
-	for (b = size - 1; b > 0 ; b--)
-		println("#");
+		for (c = 1 ; c <= size c++)
+		{
+			println(" ");
+		}
+		for (b = size - 1; b > 0 ; b--)
+		{
+			println("#");
+		}
 	printf("\n");
 	}
 if (size <= 0)
