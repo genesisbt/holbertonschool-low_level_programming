@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_square - excercise five variables
+ * main - excercise five variables
  *
  * Description: one to ten
  *
