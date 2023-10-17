@@ -18,14 +18,14 @@ for (a = 1 ; a <= size ; a++)
 	{
 		for (c = 1 ; c <= size ; c++)
 		{
-			printf(" ");
+			_putchar(' ');
 		}
 		for (b = size - 1; b > 0 ; b--)
 		{
-			printf("#");
+			_putchar('#');
 		}
-	printf("\n");
+	_putchar('\n');
 	}
 if (size <= 0)
-	printf("\n");
+	_putchar('\n');
 }
