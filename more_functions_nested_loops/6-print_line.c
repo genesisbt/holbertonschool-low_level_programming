@@ -8,7 +8,7 @@
  * Return: does not return nothing at all
  */
 
-int print_line(int n)
+void print_line(int n)
 {
 int a;
 
