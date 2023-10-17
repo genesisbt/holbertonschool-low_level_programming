@@ -16,14 +16,16 @@ int c;
 
 for (a = 1 ; a <= size + 1 ; a++)
 	{
-		for (c = 1 ; c <= size + 1 - a ; c++)
+		for (c = 1 ; c <= size - a ; c++)
 		{
 			_putchar(' ');
 		}
-		for (b = a - 1; b > 0 ; b--)
+		for (b = a ; b > 0 ; b--)
 		{
 			_putchar('#');
 		}
 		_putchar('\n');
 	}
+if (a <= 0)
+	_putchar('\n');
 }
