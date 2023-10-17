@@ -22,6 +22,6 @@ for (a = 0; a < n; a++)
 	_putchar('\\');
 	_putchar('\n');
 	}
-if (a < 0)
+if (n <= 0)
 	_putchar('\n');
 }
