@@ -21,6 +21,6 @@ for (a = 0; a < size; a++)
 		}
 	_putchar('\n');
 	}
-if (n <= 0)
+if (size <= 0)
 	_putchar('\n');
 }
