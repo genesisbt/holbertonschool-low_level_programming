@@ -18,11 +18,11 @@ for (a = 1 ; a <= size ; a++)
 	{
 		for (c = 1 ; c <= size c++)
 		{
-			println(" ");
+			printf(" ");
 		}
 		for (b = size - 1; b > 0 ; b--)
 		{
-			println("#");
+			printf("#");
 		}
 	printf("\n");
 	}
