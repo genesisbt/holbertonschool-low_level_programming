@@ -17,12 +17,12 @@ int k;
     {
         for (j = 0; j < size - i - 1; j++) 
 	{
-            putchar(' ');
+            _putchar(' ');
         }
         for (k = 0; k < i + 1; k++) 
 	{
-            putchar('#');
+            _putchar('#');
         }
-        putchar('\n');  
+        _putchar('\n');  
     }
 }
