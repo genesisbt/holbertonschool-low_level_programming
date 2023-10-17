@@ -7,7 +7,7 @@
  * Return: does not return nothing at all
  */
 
-void main(void)
+int main(void)
 {
 int a;
 
@@ -23,4 +23,5 @@ for (a = 1; a <= 100; a++)
 		printf("%d ", a)
 	}
 printf("\n");
+return (0);
 }
