@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isdigit - excercise five variables
+ * mul - excercise five variables
  * @c: entry one
  * Description: one to ten
  *
