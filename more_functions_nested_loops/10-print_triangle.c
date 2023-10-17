@@ -20,7 +20,7 @@ for (a = 1 ; a <= size + 1 ; a++)
 		{
 			_putchar(' ');
 		}
-		for (b = a ; b > 0 ; b--)
+		for (b = a -1; b > 0 ; b--)
 		{
 			_putchar('#');
 		}
