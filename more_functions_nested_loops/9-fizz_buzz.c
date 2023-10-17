@@ -15,7 +15,7 @@ for (a = 1; a <= 100; a++)
 	{
 	if (a % 3 == 0 && a % 5 == 0)
 		if (a == 100)
-			printf ("FizzBuzz";
+			printf ("FizzBuzz");
 		else
 			printf("FizzBuzz ");
 	else if (a % 5 == 0)
