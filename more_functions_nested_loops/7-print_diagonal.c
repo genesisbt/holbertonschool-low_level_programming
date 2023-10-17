@@ -20,9 +20,8 @@ for (a = 0; a < n; a++)
 		_putchar(' ');
 		}
 	_putchar('\\');
-	if (a > 0)
-		_putchar('\n');
+	_putchar('\n');
 	}
-if (a <= 0)
+if (a < 0)
 	_putchar('\n');
 }
