@@ -16,7 +16,7 @@ int c;
 
 for (a = 1 ; a <= size ; a++)
 	{
-		for (c = 1 ; c <= size ; c++)
+		for (c = 1 ; c <= a ; c++)
 		{
 			_putchar(' ');
 		}
