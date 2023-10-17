@@ -1,13 +1,13 @@
 #include 'main.h'
 /**
- * main - excercise five variables
+ * _isupper - excercise five variables
  * @c: entry one
  * Description: one to ten
  *
  * Return: does not return nothing at all
  */
 
-int main(int c)
+int _isupper(int c)
 {
 int b;
 
