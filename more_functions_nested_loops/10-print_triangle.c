@@ -24,9 +24,6 @@ for (a = 1 ; a <= size + 1 ; a++)
 		{
 			_putchar('#');
 		}
-	if (a != 1)
 		_putchar('\n');
 	}
-if (size <= 0)
-	_putchar('\n');
 }
