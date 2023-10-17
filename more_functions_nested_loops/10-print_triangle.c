@@ -18,6 +18,7 @@ for (a = 1 ; a <= size + 1 ; a++)
 	{
 		for (c = 1 ; c <= size - a +1 ; c++)
 		{
+			if (c != 1)
 			_putchar(' ');
 		}
 		for (b = a -1; b > 0 ; b--)
