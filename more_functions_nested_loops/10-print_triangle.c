@@ -8,23 +8,21 @@
  * Return: does not return nothing at all
  */
 
-void print_triangle(int size)
-{
-int a;
-int b;
+void print_triangle(int size) {
+int i;
+int j;
+int k;
 
-for (a = 1 ; a <= size ; a++)
+    for (int i = 0; i < size; i++) 
+    {
+        for (int j = 0; j < size - i - 1; j++) 
 	{
-		for (b = size - a; b > 0; b++)
-		{
-			_putchar(' ');
-		}
-		for (b = 0; b < a ; b++)
-		{
-			_putchar('#');
-		}
-		_putchar('\n');
-	}
-if (a <= 0)
-	_putchar('\n');
+            putchar(' ');
+        }
+        for (int k = 0; k < i + 1; k++) 
+	{
+            putchar('#');
+        }
+        putchar('\n');  
+    }
 }
