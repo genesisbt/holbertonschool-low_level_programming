@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * print_triangle - excercise five variables
+ * main - excercise five variables
  * @size: first input
  *
  * Description: one to ten
@@ -8,7 +8,7 @@
  * Return: does not return nothing at all
  */
 
-void print_triangle(int size)
+void main(int size)
 {
 int a;
 int b;
