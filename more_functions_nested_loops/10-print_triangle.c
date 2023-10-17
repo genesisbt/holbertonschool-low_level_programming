@@ -13,18 +13,19 @@ int i;
 int j;
 int k;
 
-    for (i = 0; i < size; i++) 
-    {
-        for (j = 0; j < size - i - 1; j++) 
+for (i = 0; i < size; i++)
 	{
-            _putchar(' ');
-        }
-        for (k = 0; k < i + 1; k++) 
+	for (j = 0; j < size - i - 1; j++) 
 	{
-            _putchar('#');
-        }
-        _putchar('\n');  
-    }
+		_putchar(' ');
+	}
+	for (k = 0; k < i + 1; k++) 
+	{
+		_putchar('#');
+	}
+_putchar('\n');  
+}
+
 if (size <= 0)
 	_putchar('\n');
 }
