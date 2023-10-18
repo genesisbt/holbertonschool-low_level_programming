@@ -15,7 +15,7 @@ void print_array(int *a, int n);
 {
 	int contador;
 
-	for (contador = 0 ; contador <= n; contador++)
+	for (contador = 0 ; contador < n; contador++)
 	{
 	print ("%d, ", a[contador]);
 	}
