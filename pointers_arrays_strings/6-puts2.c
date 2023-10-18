@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts2 - excercise name
+ * puts2 - excercise name
  * @str: entry one
  *
  * Description: pointers arrays strings
@@ -8,7 +8,7 @@
  * Return: lenght of string
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int i = 0;
 
