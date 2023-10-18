@@ -11,7 +11,6 @@
 void rev_string(char *s)
 {	int j = 0;
 	int largo = 0;
-	char c;
 
 	while (s[largo] != '\0')
 	{
@@ -22,7 +21,7 @@ void rev_string(char *s)
 
 	while (largo >= 0)
 	{
-		char invertido[j] = s[i];
+		char invertido[j] = s[largo];
 
 		largo--;
 		j++;
