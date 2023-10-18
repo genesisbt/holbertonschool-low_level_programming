@@ -21,10 +21,9 @@ void print_rev(char *s)
 	i--;
 	for (i = 0 ; i < j / 2; i++)
 	{
-	char temp = s[i];
-
+	temp = s[i];
 	s[i] = s[j - i - 1];
-	s[j - i - 1] = temo;
+	s[j - i - 1] = temp;
 	}
 _putchar ('\n');
 }
