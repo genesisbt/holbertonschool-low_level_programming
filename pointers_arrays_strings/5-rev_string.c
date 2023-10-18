@@ -5,7 +5,7 @@
  *
  * Description: pointers arrays strings
  *
- * Return: lenght of string
+ * Return: void
  */
 
 void rev_string(char *s)
