@@ -1,4 +1,4 @@
-#nclude "main.h"
+#include "main.h"
 /**
  * _puts2 - excercise name
  * @str: entry one
@@ -9,7 +9,7 @@
  */
 
 void _puts2(char *str)
-i{
+{
 	int i = 0;
 
 	while (str[i] != '\0')
