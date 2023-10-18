@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_rev - excercise name
+ * rev_string - excercise name
  * @s: entry one
  *
  * Description: pointers arrays strings
@@ -8,7 +8,7 @@
  * Return: lenght of string
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	char temp;
 	int i = 0;
