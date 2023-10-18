@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rev_string - excercise name
+ * print_rev - excercise name
  * @s: entry one
  *
  * Description: pointers arrays strings
@@ -8,27 +8,23 @@
  * Return: lenght of string
  */
 
-void rev_string(char *s)
-{	int j = 0;
-	int largo = 0;
+void print_rev(char *s)
+{
+	char temp;
+	int i = 0;
+	int j = 0;
 
-	while (s[largo] != '\0')
+	while (s[j] != '\0')
 	{
-		largo++;
-	}
-	largo--;
-	char invertido[largo];
-
-	while (largo >= 0)
-	{
-		char invertido[j] = s[largo];
-
-		largo--;
 		j++;
 	}
-	for (j = 0; j <= largo; j++)
+	i--;
+	for (i = 0 ; i < j / 2; i++)
 	{
-		s[j] = invertido[j];
+	char temp = s[i];
+
+	s[i] = s[j - i - 1];
+	s[j - i - 1] = temo;
 	}
 _putchar ('\n');
 }
