@@ -34,6 +34,7 @@ int  _atoi(char *s)
 		prenumber = s[ns + nl - counter] - '0';
 		for (counter2 = 0 ; counter2 < counter ; counter2++)
 			prenumber = prenumber * 10;
+		printf ("prenumber %d \n number %d \n", prenumber, number);
 	if (number != 147483648 && prenumber != 2000000000)
 		number = number + prenumber;
 	else
