@@ -36,7 +36,7 @@ int  _atoi(char *s)
 			prenumber = prenumber * 10;
 	number = number + prenumber;
 	}
-	if (negative % 2 != 0)
+	if (negative % 2 != 0 && number != -2147483648)
 		number = -number;
 return (number);
 }
