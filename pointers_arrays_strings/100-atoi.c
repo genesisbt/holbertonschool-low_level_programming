@@ -33,7 +33,10 @@ int  _atoi(char *s)
 		prenumber = s[ns + nl - counter] - '0';
 		for (counter2 = 0 ; counter2 < counter ; counter2++)
 			prenumber = prenumber * 10;
-	number = number + prenumber;
+	if (number != 147483648 && prenumber != 2000000000)
+		number = number + prenumber;
+	else
+		number =-2147483648;
 	}
 	if (negative % 2 != 0 && number != -2147483648)
 		number = -number;
