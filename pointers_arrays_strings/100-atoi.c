@@ -25,7 +25,6 @@ int  _atoi(char *s)
 		if (s[ns] == '-')
 			negative++;
 	}
-	printf("\n");
 	for (nl = 0 ;  s[ns + nl] >= '0' && s[ns + nl] <= '9' && s[ns + nl] ; nl++)
 	{
 	}
