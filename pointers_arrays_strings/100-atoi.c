@@ -12,7 +12,6 @@
 
 int  _atoi(char *s)
 {
-	int out = 1;
 	int ns;
 	int nl;
 	int negative = 0;
