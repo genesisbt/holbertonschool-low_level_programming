@@ -34,11 +34,10 @@ int  _atoi(char *s)
 		prenumber = s[ns + nl - counter] - '0';
 		for (counter2 = 0 ; counter2 < counter ; counter2++)
 			prenumber = prenumber * 10;
-		printf ("prenumber %d \n number %d \n", prenumber, number);
-	if (number != 147483648 && prenumber != 2000000000)
-		number = number + prenumber;
-	else
-		number = -2147483648;
+		if (number == 147483648 && prenumber == 2000000000)
+			number = -2147483648;
+		else
+			number = number + prenumber;
 	}
 	if (negative % 2 != 0 && number != -2147483648)
 		number = -number;
