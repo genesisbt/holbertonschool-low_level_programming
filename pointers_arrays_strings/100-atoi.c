@@ -19,6 +19,7 @@ int  _atoi(char *s)
 	int counter2;
 	int number = 0;
 	int prenumber;
+
 	for (ns = 0 ; (s[ns] < '0' || s[ns] > '9') && (s[ns] != '\0') ; ns++)
 	{
 		if (s[ns] == '-')
@@ -36,7 +37,7 @@ int  _atoi(char *s)
 	if (number != 147483648 && prenumber != 2000000000)
 		number = number + prenumber;
 	else
-		number =-2147483648;
+		number = -2147483648;
 	}
 	if (negative % 2 != 0 && number != -2147483648)
 		number = -number;
