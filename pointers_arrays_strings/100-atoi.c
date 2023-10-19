@@ -20,7 +20,7 @@ int  _atoi(char *s)
 	int number = 0;
 	int prenumber;
 
-	for ((ns = 0 ; s[ns] < '0' || s[ns] > '9') && s[ns] != '\0' ; ns++)
+	for (ns = 0 ; (s[ns] < '0' || s[ns] > '9') && (s[ns] != '\0') ; ns++)
 	{
 		if (s[ns] == '-')
 			negative++;
