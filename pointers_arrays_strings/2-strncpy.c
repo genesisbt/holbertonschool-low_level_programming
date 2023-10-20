@@ -18,7 +18,7 @@ char *_strncpy(char *dest, char *src, int n)
 	int contador = 0;
 
 	lsrc = contar(src);
-	for (contador = 0 ; contador < n && contador < lsrc ; contador++)
+	for (contador = 0 ; contador <= n && contador < lsrc ; contador++)
 	{
 		dest[contador] = src[contador];
 	}
