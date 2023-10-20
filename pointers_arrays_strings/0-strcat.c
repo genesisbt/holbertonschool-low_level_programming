@@ -27,6 +27,15 @@ char *_strcat(char *dest, char *src)
 return (dest);
 }
 
+/**
+ * contar - cuenta largoe
+ * @cadena: puntero a array de char
+ *
+ * Description: cuego del string
+ * 
+ * Return: lenght of string
+ */
+
 int contar(char *cadena)
 {
 	int length = 0;
