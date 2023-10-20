@@ -22,9 +22,11 @@ int _strcmp(char *s1, char *s2)
 	while (ls1 == ls2 && contador <= ls1)
 	{
 		if (s1[contador] != s2[contador])
-		return (13);
+			return (1);
 		contador++;
 	}
+	if (ls1 != ls2)
+		return (1);
 return (0);
 }
 
