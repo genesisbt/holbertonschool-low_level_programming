@@ -19,7 +19,7 @@ char *_strncat(char *dest, char *src, int n)
 	int contador = 0;
 
 	lsrc = contar (src);
-	ldest = contar(dest);
+	ldest = contar (dest);
 	for (contador = 0 ; contador < n && contador < lsrc ; contador++)
 
 	{
