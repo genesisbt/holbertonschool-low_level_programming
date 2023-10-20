@@ -19,11 +19,11 @@ int _strcmp(char *s1, char *s2)
 
 	ls1 = contar(s1);
 	ls2 = contar(s2);
-	while (ls1 = ls2 && contador <= ls1)
+	while (ls1 == ls2 && contador <= ls1)
 	{
 		if (s1[contador] != s2[contador])
 		return (1);
-		contador++
+		contador++;
 	}
 return (0);
 }
