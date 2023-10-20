@@ -23,8 +23,10 @@ char *_strncat(char *dest, char *src, int n)
 	for (contador = 0 ; contador < n && contador < lsrc ; contador++)
 
 	{
-		dest[ldest + contador] = src[contador];
+		dest[contador] = src[contador];
 	}
+	if (dest[contador] != '\0')
+			dest [contador + 1] = '\0');
 return (dest);
 }
 
