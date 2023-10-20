@@ -18,8 +18,8 @@ char *_strncat(char *dest, char *src, int n)
 	int ldest = 0;
 	int contador = 0;
 
-	lsrc = contar (src);
-	ldest = contar (dest);
+	lsrc = contar(src);
+	ldest = contar(dest);
 	for (contador = 0 ; contador < n && contador < lsrc ; contador++)
 
 	{
