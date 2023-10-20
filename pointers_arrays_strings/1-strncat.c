@@ -18,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 	int contador = 0;
 
 	ldest = contar(dest);
-	for (contador = 0 ; contador <= n ; contador++)
+	for (contador = 0 ; contador < n ; contador++)
 
 	{
 		dest[ldest + contador] = src[contador];
