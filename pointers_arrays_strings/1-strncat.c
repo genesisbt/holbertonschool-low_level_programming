@@ -23,7 +23,6 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[ldest + contador] = src[contador];
 	}
-	dest[ldest + contador] = '\0';
 return (dest);
 }
 
