@@ -18,7 +18,7 @@ void reverse_array(int *a, int n)
 	for (contador = 0 ; contador < n ; contador++)
 	{
 		tmp = a[contador];
-	a[contador] = cp[n - 1 - contador];
+	a[contador] = a[n - 1 - contador];
 	cp[n - 1 - contador] = tmp;
 	}
 }
