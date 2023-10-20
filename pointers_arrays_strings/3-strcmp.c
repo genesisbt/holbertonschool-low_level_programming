@@ -23,7 +23,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[contador] != s2[contador])
 			return (13);
-		if (s2[contador] != s2[contador])
+		if (s2[contador] != s1[contador])
 			return (-13);
 		contador++;
 	}
