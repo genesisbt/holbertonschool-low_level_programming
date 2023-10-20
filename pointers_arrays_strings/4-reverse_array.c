@@ -22,7 +22,6 @@ void reverse_array(int *a, int n)
 	{
 	a[contador] = cp[n - 1 - contador];
 	}
-return (0);
 }
 
 /**
