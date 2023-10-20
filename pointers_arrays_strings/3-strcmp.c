@@ -14,7 +14,6 @@ int contar(char *cadena);
 int _strcmp(char *s1, char *s2)
 {
 	int ls1 = 0;
-	int ls2 = 0;
 	int contador = 0;
 
 	ls1 = contar(s1);
