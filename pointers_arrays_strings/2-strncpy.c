@@ -2,7 +2,7 @@
 #include <stdio.h>
 int contar(char *cadena);
 /**
- * _strncat - excercise name
+ * _strncpy - excercise name
  * @src: entry one
  * @dest: entry two
  * @n: entry three
@@ -12,7 +12,7 @@ int contar(char *cadena);
  * Return: lenght of string
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int lsrc = 0;
 	int contador = 0;
