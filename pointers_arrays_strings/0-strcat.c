@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+int contar(char *cadena);
 /**
  * _strcat - excercise name
  * @src: entry one
