@@ -22,7 +22,7 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[contador] = src[contador];
 	}
-	dest[contador + 1] = '\0';
+	dest[contador] = '\0';
 	return (dest);
 }
 
