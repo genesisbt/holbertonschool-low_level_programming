@@ -32,7 +32,7 @@ return (dest);
  * @cadena: puntero a array de char
  *
  * Description: cuego del string
- * 
+ *
  * Return: lenght of string
  */
 
