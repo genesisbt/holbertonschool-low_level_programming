@@ -28,7 +28,7 @@ int _strcmp(char *s1, char *s2)
 		contador++;
 	}
 	if (ls1 != ls2)
-		return (1);
+		return (13);
 return (0);
 }
 
