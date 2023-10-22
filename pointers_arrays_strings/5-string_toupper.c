@@ -9,8 +9,7 @@ int contar(char *cadena);
  *
  * Return: lenght of string
  */
-
-int string_toupper(char *str)
+char string_toupper(char *str)
 {
 	int lstr = 0;
 	int contador = 0;
@@ -19,10 +18,10 @@ int string_toupper(char *str)
 	while (contador <= lstr)
 	{
 	if (str[contador] >= 'a' && str[contador] <= 'z')
-		str[contador] - 32;
+		str[contador] -= 32;
 	contador++;
 	}
-return (0);
+return (str);
 }
 
 /**
