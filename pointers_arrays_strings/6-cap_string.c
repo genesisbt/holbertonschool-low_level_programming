@@ -12,7 +12,7 @@ int contar(char *cadena);
 char *cap_string(char *str)
 {
 	int lstr = 0;
-	int contador = 0;
+	int c = 0;
 	int capitalize = 0;
 
 	lstr = contar(str);
@@ -23,10 +23,12 @@ char *cap_string(char *str)
 		str[contador] -= 32;
 		capitalize = 1;
 	}
-	if (str[contador] < 'a' || str[contador] > 'z')
+	if (str[c] == ',' || str[c] == ';' || str[c] == '.' || str[c] == '!' ||
+	str[c] == '?' || str[c] == '"' || str[c] == '(' || str[c] == ')' ||
+	str[c] == '{' || str[c] == '}')
 		capitalize = 0;
+	contador++
 	}
-	contador++;
 return (str);
 }
 
