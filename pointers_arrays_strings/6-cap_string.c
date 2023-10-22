@@ -23,6 +23,8 @@ char *cap_string(char *str)
 		str[c] -= 32;
 		capitalize = 1;
 	}
+	if (str[c] >= 'A' && str[c] <= 'Z')
+		capitalize = 1;
 	if (str[c] == ',' || str[c] == ';' || str[c] == '.' || str[c] == '!' ||
 	str[c] == '?' || str[c] == '"' || str[c] == '(' || str[c] == ')' ||
 	str[c] == '{' || str[c] == '}' || str[c] == ' ')
