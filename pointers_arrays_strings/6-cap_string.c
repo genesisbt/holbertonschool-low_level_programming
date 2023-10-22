@@ -23,7 +23,7 @@ char *cap_string(char *str)
 		str[contador] -= 32;
 		capitalize = 1;
 	}
-	if (str[contador] <= 'a' || str[contador] >= 'z')
+	if (str[contador] < 'a' || str[contador] > 'z')
 		capitalize = 0;
 	}
 	contador++
