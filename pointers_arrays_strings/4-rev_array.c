@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _reverse_array - excercise name
+ * reverse_array - excercise name
  * @a: entry one
  * @n: entry two
  *
