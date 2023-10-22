@@ -16,18 +16,18 @@ char *cap_string(char *str)
 	int capitalize = 0;
 
 	lstr = contar(str);
-	while (contador <= lstr)
+	while (c <= lstr)
 	{
-	if (str[contador] >= 'a' && str[contador] <= 'z' && capitalize == '0')
+	if (str[c] >= 'a' && str[c] <= 'z' && capitalize == '0')
 	{
-		str[contador] -= 32;
+		str[c] -= 32;
 		capitalize = 1;
 	}
 	if (str[c] == ',' || str[c] == ';' || str[c] == '.' || str[c] == '!' ||
 	str[c] == '?' || str[c] == '"' || str[c] == '(' || str[c] == ')' ||
 	str[c] == '{' || str[c] == '}')
 		capitalize = 0;
-	contador++;
+	c++;
 	}
 return (str);
 }
