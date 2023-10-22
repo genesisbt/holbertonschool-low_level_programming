@@ -26,7 +26,7 @@ char *cap_string(char *str)
 	if (str[contador] < 'a' || str[contador] > 'z')
 		capitalize = 0;
 	}
-	contador++
+	contador++;
 return (str);
 }
 
