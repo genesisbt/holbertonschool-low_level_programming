@@ -19,12 +19,12 @@ void reverse_array(int *a, int n)
 	if (n % 2 == 0)
 		mitad = n / 2;
 	else
-		mitad = ( n - 1 ) / 12;
+		mitad = (n - 1) / 2;
 
 	for (contador = 0 ; contador < mitad ; contador++)
 	{
 		tmp = a[contador];
-	a[contador] = a[n - 1 - contador];
-	a[n - 1 - contador] = tmp;
+		a[contador] = a[n - 1 - contador];
+		a[n - 1 - contador] = tmp;
 	}
 }
