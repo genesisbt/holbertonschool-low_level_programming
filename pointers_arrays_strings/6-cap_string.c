@@ -27,7 +27,7 @@ char *cap_string(char *str)
 		capitalize = 1;
 	if (str[c] == ',' || str[c] == ';' || str[c] == '.' || str[c] == '!' ||
 	str[c] == '?' || str[c] == '"' || str[c] == '(' || str[c] == ')' ||
-	str[c] == '{' || str[c] == '}' || str[c] == ' ')
+	str[c] == '{' || str[c] == '}' || str[c] == ' ' || str[c] == '\t')
 		capitalize = 0;
 	c++;
 	}
