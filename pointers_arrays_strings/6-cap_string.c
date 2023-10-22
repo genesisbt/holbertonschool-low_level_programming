@@ -25,7 +25,7 @@ char *cap_string(char *str)
 	}
 	if (str[c] == ',' || str[c] == ';' || str[c] == '.' || str[c] == '!' ||
 	str[c] == '?' || str[c] == '"' || str[c] == '(' || str[c] == ')' ||
-	str[c] == '{' || str[c] == '}')
+	str[c] == '{' || str[c] == '}' || str[c] == ' ')
 		capitalize = 0;
 	c++;
 	}
