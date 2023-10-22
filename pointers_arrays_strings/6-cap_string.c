@@ -18,7 +18,7 @@ char *cap_string(char *str)
 	lstr = contar(str);
 	while (c <= lstr)
 	{
-	if (str[c] >= 'a' && str[c] <= 'z' && capitalize == '0')
+	if (str[c] >= 'a' && str[c] <= 'z' && capitalize == 0)
 	{
 		str[c] -= 32;
 		capitalize = 1;
