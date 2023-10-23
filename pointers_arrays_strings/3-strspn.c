@@ -23,7 +23,7 @@ unsigned int diferentes = 0;
 		diferentes = iguales;
 		for (contador2 = 0 ; accept[contador2] != '\0' ; contador2++)
 		{
-		if (s[contador] == accept[contador2])
+			if (s[contador] == accept[contador2])
 				{
 				iguales++;
 				}
