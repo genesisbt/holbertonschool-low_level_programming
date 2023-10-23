@@ -33,6 +33,8 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
+	if (coincidencia == 0)
+		return (&(s[1]));
 return (NULL);
 }
 
