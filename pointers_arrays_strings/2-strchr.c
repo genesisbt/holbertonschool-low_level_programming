@@ -20,6 +20,6 @@ int contador = 0;
 			return (&(s[contador]));
 	}
 	if (s[contador] == '\0')
-		return (&(s[contador]));
+		return ('\0');
 return ('\0');
 }
