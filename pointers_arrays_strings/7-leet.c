@@ -18,7 +18,7 @@ char *leet(char *str)
 
 	for (contador = 0 ; str[contador] != '\0' ; contador++)
 	{
-		for (contador2 = 0 ; letras[contador2] != '/0' ; contador2++)
+		for (contador2 = 0 ; letras[contador2] != '\0' ; contador2++)
 		{
 			if (str[contador] == letras[contador2])
 				str[contador] = numeros[contador2];
