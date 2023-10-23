@@ -24,6 +24,5 @@ char *leet(char *str)
 				str[contador] = numeros[contador2];
 		}
 	}
-}
 return (str);
 }
