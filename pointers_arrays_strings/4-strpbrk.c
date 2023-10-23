@@ -36,9 +36,9 @@ char *_strpbrk(char *s, char *accept)
 return (NULL);
 }
 
-int contar(char *cadena)
+unsigned int contar(char *cadena)
 {
-	int length = 0;
+	unsigned int length = 0;
 
 	while (cadena[length] != '\0')
 	{
