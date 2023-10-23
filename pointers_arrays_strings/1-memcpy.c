@@ -11,9 +11,9 @@ int contar(char *cadena);
  * Return: lenght of string
  */
 
-char *_memcpy(char *dest, char *src, int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int contador = 0;
+	unsigned int contador = 0;
 
 	for (contador = 0 ; contador < n ; contador++)
 	{
