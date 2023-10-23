@@ -20,10 +20,10 @@ unsigned int diferentes = 0;
 
 	for (contador = 0 ; s[contador] != '\0' ; contador++)
 	{
+		diferentes = iguales;
 		for (contador2 = 0 ; accept[contador2] != '\0' ; contador2++)
 		{
-			diferentes = iguales;
-			if (s[contador] == accept[contador2])
+		if (s[contador] == accept[contador2])
 				{
 				iguales++;
 				}
