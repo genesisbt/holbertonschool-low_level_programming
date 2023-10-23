@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 int contar(char *cadena);
 /**
  * _strchr - excercise name
