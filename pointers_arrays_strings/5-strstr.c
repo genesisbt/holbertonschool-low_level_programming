@@ -24,7 +24,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		if (haystack[contador] == needle[0])
 		{
-			for (contador2 = 0 ; haystack[contador + contador2] == accept[contador2]
+			for (contador2 = 0 ; haystack[contador + contador2] == needle[contador2]
 			; contador2++)
 			{
 				coincidencia++;
