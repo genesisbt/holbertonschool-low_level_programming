@@ -13,14 +13,12 @@
 void print_diagsums(int *a, int size)
 {
 	int contador = 0;
+	int d1 = 0, d2 = 0;
 
-	contador3 = size - 1;
 	for (contador = 0 ; contador < size ; contador++)
 	{
-		printf("%d, %d\n", a[contador][contador], a[contador][contador - 1]);
+		d1 += a[contador][contador];
+		d2 += a[contador][contador - 1];
 	}
-
-		
-	_putchar ('\n');
-	}
+	printf("%d, %d\n", d1, d2);
 }
