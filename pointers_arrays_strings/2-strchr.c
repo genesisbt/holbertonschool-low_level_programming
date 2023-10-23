@@ -17,9 +17,9 @@ int contador = 0;
 	for (contador = 0 ; s[contador] != '\0' ; contador++)
 	{
 		if (s[contador] == c)
-			return &(s[contador]);
+			return (&(s[contador]));
 	}
 	if (s[contador] == '\0')
-		return &(s[contador]);
+		return (&(s[contador]));
 return ('\0');
 }
