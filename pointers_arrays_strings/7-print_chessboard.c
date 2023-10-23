@@ -19,7 +19,7 @@ void print_chessboard(char (*a)[8])
 	{
 		for (contador2 = 0 ; contador2 < 8 ; contador2++)
 		{
-			_putchar a[contador][contador2];
+			_putchar (a[contador][contador2]);
 		}
 
 	}
