@@ -2,7 +2,7 @@
 #include <stdio.h>
 int contar(char *cadena);
 /**
- * cap_string - excercise name
+ * leet - excercise name
  * @str: entry one
  *
  * Description: pointers arrays strings
