@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * memset - excercise name
+ * _memset - excercise name
  * @s: entry one
  * @b: entry two
  * @n: entry three
