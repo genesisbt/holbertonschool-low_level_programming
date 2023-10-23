@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-int contar(char *cadena);
+unsigned int contar(char *cadena);
 
 /**
  * _strpbrk - excercise name
@@ -14,7 +14,7 @@ int contar(char *cadena);
 
 char *_strpbrk(char *s, char *accept)
 {
-	int acceptln = 0;
+	unsigned int acceptln = 0;
 	int contador = 0;
 	int contador2 = 0;
 	unsigned int coincidencia = 0;
