@@ -19,7 +19,5 @@ int contador = 0;
 		if (s[contador] == c)
 			return (&(s[contador]));
 	}
-	if (s[contador] == '\0')
-		return (NULL);
-return (NULL);
+return NULL;
 }
