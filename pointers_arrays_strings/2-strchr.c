@@ -21,6 +21,6 @@ int contador = 0;
 			return (&(s[contador]));
 	}
 	if (c == '\0')
-		return (' ');
+		return ('0');
 return (NULL);
 }
