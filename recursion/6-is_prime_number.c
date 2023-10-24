@@ -35,5 +35,5 @@ if (n % l == 0)
 if (l < 2)
 	return (0);
 else
-	_prime_finder(n, l - 1);
+	return (_prime_finder(n, l - 1));
 }
