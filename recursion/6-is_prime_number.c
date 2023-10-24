@@ -10,7 +10,7 @@ int _prime_finder(int n, int l);
  * Return: root
  */
 
-int _is_prime_number(int n)
+int is_prime_number(int n)
 {
 if (n <= 1)
 	return (0);
@@ -30,10 +30,10 @@ else
  */
 int _prime_finder(int n, int l)
 {
-if (n % l == 0)
-	return (1);
-else if (l < 2)
+if (l < 2)
 	return (0);
+if (n % 1 == 0)
+	return (1);
 else
 	return (_prime_finder(n, l - 1));
 }
