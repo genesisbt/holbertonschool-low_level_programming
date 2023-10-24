@@ -10,7 +10,7 @@
  * return: something
  */
 
-void _strlen_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	int counter = 0;
 
