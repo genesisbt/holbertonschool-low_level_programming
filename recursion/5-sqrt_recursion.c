@@ -31,10 +31,10 @@ else
  */
 int _sqrt_finder(int n, int l)
 {
-if (n * n == l)
-	return (n);
-if (n * n > l)
+if (l * l == n)
+	return (l);
+if (l * l > n)
 	return (-1);
 else
-	return (_sqrt_finder(n, n + 1));
+	return (_sqrt_finder(n, l + 1));
 }
