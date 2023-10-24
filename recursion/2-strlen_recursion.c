@@ -7,7 +7,7 @@
  *
  * description: Recursion Excercises
  *
- * return: something
+ * Return: Lenght
  */
 
 int _strlen_recursion(char *s)
