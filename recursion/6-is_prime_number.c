@@ -32,7 +32,7 @@ int _prime_finder(int n, int l)
 {
 if (n % l == 0)
 	return (1);
-if (l < 2)
+else if (l < 2)
 	return (0);
 else
 	return (_prime_finder(n, l - 1));
