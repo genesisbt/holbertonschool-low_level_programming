@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _pow_recurssion - Function name
+ * _pow_recursion - Function name
  * @x: entry one
  * @y: entry two
  *
