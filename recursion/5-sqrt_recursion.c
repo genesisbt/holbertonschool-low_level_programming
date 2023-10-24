@@ -20,6 +20,15 @@ else
 	return (_sqrt_finder(n, 1));
 }
 
+/**
+ * _sqrt_finder - Function name
+ * @n: entry one
+ * @l: entry two
+ *
+ * description: Recursion Excercises
+ *
+ * Return: finds root
+ */
 int _sqrt_finder(int n, int l)
 {
 if (n * n == l)
