@@ -2,7 +2,7 @@
 #include <stdio.h>
 int _prime_finder(int n, int l);
 /**
- * _is_prime_number - Function name
+ * is_prime_number - Function name
  * @n: entry one
  *
  * description: Recursion Excercises
