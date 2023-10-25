@@ -11,7 +11,7 @@
  */
 
 void argcount(int argc)
-{	
+{
 	printf("%i\n", argc - 1);
 }
 
