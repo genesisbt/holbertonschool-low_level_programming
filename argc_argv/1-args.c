@@ -10,10 +10,9 @@
  * Return: is void
  */
 
-void argcount(int a)
+void argcount(int argc)
 {	
-	a--;
-	printf("%i\n", a);
+	printf("%i\n", argc - 1);
 }
 
 /**
