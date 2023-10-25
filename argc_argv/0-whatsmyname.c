@@ -11,7 +11,7 @@
  * Return: is void
  */
 
-void mynameis(argc, *argv[])
+void mynameis(int argc, char *argv[])
 {
 	printf("%c", argv[0]);
 }
