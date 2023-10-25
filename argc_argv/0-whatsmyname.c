@@ -16,8 +16,8 @@ void mynameis(char *argv[])
 	printf("%s", argv[0]);
 }
 
-void main(void);
+void main(int argc, char *argv[])
 {
-	mynameis();
+	mynameis(argv);
 }
 
