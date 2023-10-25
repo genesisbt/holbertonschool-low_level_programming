@@ -17,7 +17,7 @@ void argprint(int argc, char *argv[])
 
 	for (i = 0 ; i <= argc ; i++)
 	{
-	printf("%s\n", argv[i];
+	printf("%s\n", argv[i]);
 	}
 }
 
@@ -33,7 +33,7 @@ void argprint(int argc, char *argv[])
 
 int main(int argc, char *argv[])
 {
-	argcount(argc, argv);
+	argprint(argc, argv);
 	return (0);
 }
 
