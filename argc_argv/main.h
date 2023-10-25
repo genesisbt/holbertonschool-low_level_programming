@@ -3,6 +3,6 @@
 #define _MAIN_H_
 
 int _putchar(char c);
-void mynameis(int argc, char argv*[]);
+void mynameis(int argc, char *argv[]);
 	
 #endif
