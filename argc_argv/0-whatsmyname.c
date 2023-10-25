@@ -3,8 +3,7 @@
 
 /**
  * mynameis - Name of the script
- * @argc: entry one
- * @argv: entry two
+ * @argv: entry one
  *
  * Description: Prints the first argument of the command line in the terminal
  *
@@ -15,6 +14,16 @@ void mynameis(char *argv[])
 {
 	printf("%s\n", argv[0]);
 }
+
+/**
+ * main - name
+ * @argc: entry one
+ * @argv: entry two
+ *
+ * Description: Main function
+ *
+ * Return: Zero
+ */
 
 int main(int argc, char *argv[])
 {
