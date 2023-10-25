@@ -15,3 +15,9 @@ void mynameis(char *argv[])
 {
 	printf("%s", argv[0]);
 }
+
+void main(void);
+{
+	mynameis();
+}
+
