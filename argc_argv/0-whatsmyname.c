@@ -18,6 +18,7 @@ void mynameis(char *argv[])
 
 void main(int argc, char *argv[])
 {
+	(void)argc;
 	mynameis(argv);
 }
 
