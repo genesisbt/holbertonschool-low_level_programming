@@ -3,8 +3,7 @@
 
 /**
  * multiply - Name of the script
- * @n1: entry one
- * @n2: entry two
+ * @argv: entry two
  * @argc: entry three
  *
  * Description: Prints the first argument of the command line in the terminal
@@ -12,9 +11,12 @@
  * Return: is void
  */
 
-int multiply(int n1, int n2, int argc)
+int multiply(int argc, char *argv[])
 {
 int result;
+int n1 = atoi(argv[1]);
+int n2 = atoi(argv[2]);
+
 if (argc == 3)
 	{
 	result = n1 * n2;
@@ -22,7 +24,7 @@ if (argc == 3)
 	}
 else
 	{
-	printf("Error");
+	printf("Error\n");
 	return (1);
 	}
 }
@@ -30,17 +32,16 @@ else
 /**
  * main - name
  * @argc: entry one
- * @n1: entry two
- * @n2: entry three
+ * @argv: entry two
  *
  * Description: Main function
  *
  * Return: Zero
  */
 
-int main(int n1, int n2, int argc)
+int main(int argc, char *argv[])
 {
-	multiply(n1, n2, argc);
+	multiply(argc, argv);
 	return (0);
 }
 
