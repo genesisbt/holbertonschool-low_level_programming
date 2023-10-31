@@ -22,6 +22,7 @@ if (argc == 3)
 	{
 	result = n1 * n2;
 	printf("%i\n", result);
+	return (0):
 	}
 else
 	{
