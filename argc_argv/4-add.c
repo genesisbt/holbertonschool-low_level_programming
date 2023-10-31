@@ -15,21 +15,22 @@
 int main(int argc, char *argv[])
 {
 	int c;
+	int c2;
 	int result = 0;
 
 	if (argc > 1)
 	{
 		for (c = 1 ; c < argc ; c++)
 		{
-			if (argv[c] < 0 || argv[c] > 9)
+			for (c2 = 0; argv[c][c2] != '\0' ;c2++)
+			{
+			if (argv[c][c2] < '0' || argv[c][c2] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
-			else
-			{
-				result += atoi(argv[c]);
 			}
+				result += atoi(argv[c]);
 		}
 		printf("%i\n", result);
 		return (0);
