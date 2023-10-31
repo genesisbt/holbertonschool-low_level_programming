@@ -18,17 +18,9 @@ int result;
 int n1 = atoi(argv[1]);
 int n2 = atoi(argv[2]);
 
-if (argc == 3)
-	{
-	result = n1 * n2;
-	printf("%i\n", result);
-	return (0);
-	}
-else
-	{
-	printf("Error\n");
-	return (1);
-	}
+result = n1 * n2;
+printf("%i\n", result);
+return (0);
 }
 
 /**
@@ -43,7 +35,15 @@ else
 
 int main(int argc, char *argv[])
 {
+	if (argc == 3)
+	{
 	multiply(argc, argv);
 	return (0);
+	}
+	else
+	{
+	printf("Error\n");
+	return (1);
+	}
 }
 
