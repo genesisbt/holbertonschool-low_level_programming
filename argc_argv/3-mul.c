@@ -5,14 +5,13 @@
 /**
  * multiply - Name of the script
  * @argv: entry two
- * @argc: entry three
  *
  * Description: Prints the first argument of the command line in the terminal
  *
  * Return: is void
  */
 
-int multiply(int argc, char *argv[])
+int multiply(char *argv[])
 {
 int result;
 int n1 = atoi(argv[1]);
@@ -37,7 +36,7 @@ int main(int argc, char *argv[])
 {
 	if (argc == 3)
 	{
-	multiply(argc, argv);
+	multiply(argv);
 	return (0);
 	}
 	else
