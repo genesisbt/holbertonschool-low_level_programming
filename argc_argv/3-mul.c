@@ -38,7 +38,7 @@ else
  * Return: Zero
  */
 
-int main(int argc, int n1, int n2)
+int main(int n1, int n2, int argc)
 {
 	multiply(n1, n2, argc);
 	return (0);
