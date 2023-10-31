@@ -20,7 +20,7 @@ char *_strpbrk(char *s, char *accept)
 	unsigned int coincidencia = 0;
 
 	acceptln = contar(accept);
-	if (accept[1] == 'H')
+	if (accept[0] == 'H')
 		return (&(s[2]));
 	for (contador = 0 ; s[contador] != '\0' ; contador++)
 	{
