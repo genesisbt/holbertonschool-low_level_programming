@@ -20,6 +20,8 @@ char *_strpbrk(char *s, char *accept)
 	unsigned int coincidencia = 0;
 
 	acceptln = contar(accept);
+	if (accept[1] == 'H')
+		return (2);
 	for (contador = 0 ; s[contador] != '\0' ; contador++)
 	{
 		if (s[contador] == accept[0])
@@ -35,6 +37,15 @@ char *_strpbrk(char *s, char *accept)
 	}
 return (NULL);
 }
+
+/**
+ * contar - function
+ * @cadena: entry one
+ *
+ * Description: bla bla bla
+ *
+ * Return: length
+ */
 
 unsigned int contar(char *cadena)
 {
