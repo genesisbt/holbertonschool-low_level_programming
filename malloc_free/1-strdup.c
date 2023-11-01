@@ -12,7 +12,7 @@
 
 char *_strdup(char *str)
 {
-int c1, c2;
+int c1 = 0, c2;
 char *copy;
 
 if (str == NULL)
