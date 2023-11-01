@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
  * create_array - Name of the script
  * @size: entry one
@@ -12,10 +13,9 @@
 
 char *create_array(unsigned int size, char c)
 {
-char *string;
+char *string = malloc(size * sizeof(char));
 unsigned int counter;
 
-string = malloc(size * sizeof(char));
 if (size == 0 || string == NULL)
 	return (NULL);
 else
