@@ -21,10 +21,10 @@ else
 	{
 	while (str[c1] != '\0')
 		{
-		c1++
+		c1++;
 		}
 
-	copy = malloc(sizeof(char) * (c1 + 1))
+	copy = malloc(sizeof(char) * (c1 + 1));
 
 	for (c2 = 0 ; c2 <= c1 ; c2++)
 		{
