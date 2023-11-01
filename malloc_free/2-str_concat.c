@@ -26,7 +26,7 @@ char *result;
 	if (result == NULL)
 		return (NULL);
 
-	for (c3 = 0 ; c3 < c1 + c2 - 1; c3++)
+	for (c3 = 0 ; c3 < c1 + c2; c3++)
 		{
 		if (c3 < c1)
 			result[c3] = s1[c3];
