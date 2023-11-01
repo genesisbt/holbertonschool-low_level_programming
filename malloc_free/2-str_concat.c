@@ -30,9 +30,9 @@ char *result;
 	for (c3 = 0 ; c3 < c1 + c2 - 1; c3++)
 		{
 		if (c3 < c1)
-			result[c3] = str[c3];
+			result[c3] = s1[c3];
 		if (c3 >= c1)
-			result[c3] = str2[c3 - c1];
+			result[c3] = s2[c3 - c1];
 		}
 	result[c3] = '\0';
 	return (result);
