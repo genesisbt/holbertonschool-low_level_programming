@@ -26,7 +26,7 @@ else
 
 	copy = malloc(sizeof(char) * (c1 + 1));
 
-	for (c2 = 0 ; c2 <= c1 ; c2++)
+	for (c2 = 0 ; c2 < c1 ; c2++)
 		{
 		copy[c2] = str[c2];
 		}
