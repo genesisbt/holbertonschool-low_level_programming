@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _str_concat - Name of the script
+ * str_concat - Name of the script
  * @s1: entry one
  * @s2: entry two
  *
@@ -13,7 +13,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-int c1 = 0, c2 = 0, c3 = 0; c4 = 0;
+int c1 = 0, c2 = 0, c3 = 0;
 char *result;
 
 {
@@ -29,12 +29,11 @@ char *result;
 
 	for (c3 = 0 ; c3 < c1 + c2 - 1; c3++)
 		{
-			if (c3 < c1)
-				result[c3] = str[c3];
-			if (c3 >= c1)
-				result[c3] = str2 [c3 - c1];
+		if (c3 < c1)
+			result[c3] = str[c3];
+		if (c3 >= c1)
+			result[c3] = str2[c3 - c1];
 		}
-
 	result[c3] = '\0';
 	return (result);
 }
