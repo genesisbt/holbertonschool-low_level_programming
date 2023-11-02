@@ -27,7 +27,7 @@ char *result;
 	while (s2[c2] != '\0')
 		c2++;
 
-	result = malloc(sizeof(char) * (c1 + c2 + 1));
+	result = malloc(sizeof(char) * (c1 + c2 - 1));
 
 	if (result == NULL)
 		return (NULL);
