@@ -11,15 +11,8 @@
  * Return: is void
  */
 
-int main(int argc, char *argv[])
+int main(void)
 {
-int a;
-
-(void)argc;
-for (a = 0 ; argv[0][a] != '\0' ; a++)
-{
-	_putchar(argv[0][a]);
-}
-_putchar('\n');
+printf("%s\n", __FILE__);
 return (0);
 }
