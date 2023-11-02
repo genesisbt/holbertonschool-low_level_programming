@@ -14,6 +14,8 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+dog cat 2
+
 unsigned int c1 = 0, c2 = 0, c3 = 0;
 char *result;
 
@@ -26,9 +28,9 @@ char *result;
 		c1++;
 	while (s2[c2] != '\0')
 		c2++;
-
-	result = malloc(sizeof(char) * (c1 + c2 - 1));
-
+	if (n <= c2)
+		c2 = n;
+	result = malloc(sizeof(char) * (c1 + c2 + 1));
 	if (result == NULL)
 		return (NULL);
 	if (n >= c2)
