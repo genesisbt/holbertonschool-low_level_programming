@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 {
 int a;
 
+(void)argc;
 for (a = 0 ; argv[0][a] != '\0' ; a++)
 {
 	_putchar(argv[0][a]);
