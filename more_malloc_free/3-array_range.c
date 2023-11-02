@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * _calloc - Name of the script
- * @size: entry one
- * @nmemb: entry two
+ * array_range - Name of the script
+ * @min: entry one
+ * @max: entry two
  *
  * Description: description of the file
  *
