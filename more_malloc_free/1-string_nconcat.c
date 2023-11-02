@@ -14,8 +14,6 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-dog cat 2
-
 unsigned int c1 = 0, c2 = 0, c3 = 0;
 char *result;
 
