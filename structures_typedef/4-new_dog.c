@@ -13,8 +13,11 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t d2
+dog_t *d2 = malloc(sizeof(dog_t));
 
-init_dog(d2, name, age, owner);
+if (d2 != NULL)
+{
+	init_dog(d2, name, age, owner);
+}
 return (d2);
 }
