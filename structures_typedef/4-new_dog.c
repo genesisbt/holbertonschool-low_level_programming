@@ -19,5 +19,7 @@ if (d2 != NULL)
 {
 	init_dog(d2, name, age, owner);
 }
+else
+free(d2);
 return (d2);
 }
