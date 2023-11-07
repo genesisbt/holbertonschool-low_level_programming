@@ -18,14 +18,15 @@ int a;
 
 if (size <= 0)
 	return (-1);
-if (cmp != NULL && array != NULL)
-{
-	for (a = 0 ; a < size ; a++)
-	{
-	if (cmp(array[a]) != 0)
-		return (a);
-	}
-}
 else
+{
+	if (cmp != NULL && array != NULL)
+	{
+		for (a = 0 ; a < size ; a++)
+		{
+		if (cmp(array[a]) != 0)
+			return (a);
+		}
 	return (0);
+	
 }
