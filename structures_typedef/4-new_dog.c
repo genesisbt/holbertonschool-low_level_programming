@@ -18,11 +18,26 @@ dog_t *d2 = malloc(sizeof(dog_t));
 
 if (d2 != NULL)
 {
-	d2->name = name;
+	d2->name = malloc(strlen(name) + 1);
+	d2->owner = malloc(strlen(owner) + 1);
+
+	if (d2->name == NULL || d2->owner == NULL)
+	{
+		free d2->name;
+		free d2->owner;
+		free d2;
+	}
+	else
+	{
+	strcpy(d2->name, name);
+	strcpy(d2->owner, owner);
 	d2->age = age;
-	d2->owner = owner;
 	return (d2);
+	}
 }
 else
-return (NULL);
+{
+	free(d2);
+	return (NULL);
+}
 }
