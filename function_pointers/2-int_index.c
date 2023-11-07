@@ -27,6 +27,7 @@ else
 		if (cmp(array[a]) != 0)
 			return (a);
 		}
+	}
 	return (0);
-	
+}
 }
