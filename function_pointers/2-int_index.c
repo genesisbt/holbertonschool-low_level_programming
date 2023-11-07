@@ -14,7 +14,7 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-size_t a;
+int a;
 
 if (size <= 0)
 	return (-1);
@@ -26,4 +26,6 @@ if (cmp != NULL && array != NULL)
 		return (a);
 	}
 }
+else
+	return (0);
 }
