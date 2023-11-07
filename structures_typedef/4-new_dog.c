@@ -24,9 +24,9 @@ if (d2 != NULL)
 
 	if (d2->name == NULL || d2->owner == NULL)
 	{
-		free d2->name;
-		free d2->owner;
-		free d2;
+		free(d2->name);
+		free(d2->owner);
+		free(d2);
 	}
 	else
 	{
