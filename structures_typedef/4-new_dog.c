@@ -27,6 +27,7 @@ if (d2 != NULL)
 		free(d2->name);
 		free(d2->owner);
 		free(d2);
+		return (NULL);
 	}
 	else
 	{
