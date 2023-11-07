@@ -19,7 +19,8 @@ dog_t *d2 = malloc(sizeof(dog_t));
 if (d2 != NULL)
 {
 	init_dog(d2, name, age, owner);
+	return (d2);
 }
 else
-return (d2);
+return (NULL);
 }
