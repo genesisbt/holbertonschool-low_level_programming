@@ -1,3 +1,4 @@
+#include<string.h>
 #include<stdio.h>
 #include<stdlib.h>
 #include"3-calc.h"
@@ -27,8 +28,9 @@ if ((argv[2][0] == '/' || argv[2][0] == '%') && atoi(argv[3]) == 0)
 	printf("Error\n");
 	exit(100);
 }
-if (argv[2][0] == '+' || argv[2][0] == '-' || argv[2][0] == '/'
+if ((argv[2][0] == '+' || argv[2][0] == '-' || argv[2][0] == '/'
 	|| argv[2][0] == '%' || argv[2][0] == '*' || argv[2][0] == '/')
+	&& strlen(argv[2]) == 1)
 {
 a = atoi(argv[1]);
 b = atoi(argv[3]);
