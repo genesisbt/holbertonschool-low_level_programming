@@ -21,7 +21,11 @@ unsigned int i;
 va_start(lista, n);
 for (i = 0 ; i < n ; i++)
 {
-	if (i < n - 1)
+	if (separator == NULL)
+	{
+		printf("%i", va_arg(lista, int));
+	}
+	else if (i < n - 1)
 		printf("%i%s", va_arg(lista, int), separator);
 	else
 		printf("%i", va_arg(lista, int));
