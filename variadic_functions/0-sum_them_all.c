@@ -17,7 +17,9 @@ if (n == 0)
 	return (0);
 
 va_list lista;
-int i, res = 0;
+unsigned int i;
+int res = 0;
+
 va_start(lista, n);
 for (i = 0 ; i < n ; i++)
 {
