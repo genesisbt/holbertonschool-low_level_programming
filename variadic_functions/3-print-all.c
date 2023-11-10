@@ -3,9 +3,8 @@
 #include "variadic_functions.h"
 
 /**
- * print_all- function name
- * @separator: separator of parameters
- * @n: number of parameters
+ * print_all - function name
+ * @format: something
  *
  * Description: function sum of all parameters passed
  *
@@ -21,7 +20,7 @@ int c1 = 0;
 va_start(lista, format);
 while (format[c1] != '\0')
 {
-	switch(format[c1])
+	switch (format[c1])
 	{
 		case 'c':
 			printf("%c", va_arg(lista, int));
