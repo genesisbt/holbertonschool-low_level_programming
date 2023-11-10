@@ -22,9 +22,7 @@ void print_all(const char * const format, ...)
 
 	va_start(lista, format);
 	while (format[c1] != '\0')
-	{ 
-		if (format[c1] == 's')
-			string = va_arg(lista, char*);
+	{
 		switch (format[c1])
 		{
 			case 'c':
@@ -37,6 +35,7 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(lista, double));
 				break;
 			case 's':
+				string = va_arg(lista, char*);
 				printf("%s", (string == NULL) ? "(nil)" : string);
 				break;
 		}
@@ -49,4 +48,6 @@ void print_all(const char * const format, ...)
 	va_end(lista);
 	break;
 	}
+	if (format == NULL)
+		putchar('\n');
 }
