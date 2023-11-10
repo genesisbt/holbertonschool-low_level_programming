@@ -18,10 +18,13 @@ void print_all(const char * const format, ...)
 	va_list lista;
 	char *sep = ", ";
 	int c1 = 0;
+	char *string;
 
 	va_start(lista, format);
 	while (format[c1] != '\0')
-	{
+	{ 
+		if (format[c1] == 's')
+			string = va_arg(lista, char*);
 		switch (format[c1])
 		{
 			case 'c':
@@ -34,7 +37,7 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(lista, double));
 				break;
 			case 's':
-				printf("%s", va_arg(lista, char *));
+				printf("%s", (string == NULL) ? "(nil)" : string);
 				break;
 		}
 		if (format[c1 + 1] != '\0' && (format[c1] == 'c' || format[c1] == 'i'
@@ -44,5 +47,6 @@ void print_all(const char * const format, ...)
 	}
 	putchar('\n');
 	va_end(lista);
+	break;
 	}
 }
