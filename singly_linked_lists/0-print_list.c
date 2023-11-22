@@ -5,7 +5,7 @@
 
 /**
  * print_list - Function name
- * h: first entry
+ * @h: first entry
  *
  * Description: counts the members of a list
  *
