@@ -1,12 +1,22 @@
 #ifndef LISTS_H
 #define LISTS_H
 #include<stdlib.h>
+
+
+/**
+ * struct st1 - stuct definition
+ * @str: string
+ * @len: str length
+ * @next: pointer to next node
+ */
+
+
 typedef struct st1
 {
 	char *str;
 	int len;
 	struct st1 *next;
-}list_t;
+} list_t;
 
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
