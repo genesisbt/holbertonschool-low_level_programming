@@ -15,13 +15,16 @@ void free_list(list_t *head)
 {
 list_t *follow;
 
-while (head->next != NULL)
+if (head != NULL)
 {
-follow = head->next;
-free(head->str);
-free(head);
-head = follow;
-}
-free(head->str);
-free(head);
+	while (head->next != NULL)
+	{
+	follow = head->next;
+	free(head->str);
+	free(head);
+	head = follow;
+	}
+	free(head->str);
+	free(head);
+	}
 }
