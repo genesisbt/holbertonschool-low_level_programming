@@ -19,11 +19,13 @@ list_t *last;
 
 if (new == NULL)
 {
+	free(new);
 	return (NULL);
 }
 new->str = strdup(str);
 if (new->str == NULL)
-{
+{	free(new->str);
+	free(new);
 	return (NULL);
 }
 new->len = strlen(str);
