@@ -5,8 +5,8 @@
 
 /**
  * add_node - Function name
- * @h: first entry
- *
+ * @head: first entry
+ * @str: second entry
  * Description: counts the members of a list
  *
  * Return: length of list
