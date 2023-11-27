@@ -1,7 +1,6 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include"lists.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * free_list - Function name
@@ -13,18 +12,16 @@
 
 void free_dlistint(dlistint_t *head)
 {
-list_t *follow;
+dlistint_t *follow;
 
 if (head != NULL)
 {
 	while (head->next != NULL)
 	{
 	follow = head->next;
-	free(head->str);
 	free(head);
 	head = follow;
 	}
-	free(head->str);
 	free(head);
 	}
 }
