@@ -22,13 +22,19 @@ if (new == NULL)
 }
 
 new->n = n;
-new->next = *head;
+new->next = NULL;
 new->prev = NULL;
+
+if (*head == NULL)
+{
+	*head = new;
+}
 if (*head != NULL)
 	{
+	new->next = *head;
 	(*head)->prev = new;
+	*head = new;
 	}
-*head = new;
 
 return (new);
 }
