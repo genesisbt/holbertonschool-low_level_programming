@@ -29,7 +29,7 @@ if (*head == NULL)
 {
 	*head = new;
 }
-if (*head != NULL)
+else if (*head != NULL)
 	{
 	new->next = *head;
 	(*head)->prev = new;
