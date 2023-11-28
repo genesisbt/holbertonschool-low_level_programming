@@ -30,7 +30,6 @@ if (*h == NULL)
 {
 	if (idx == 0)
 	{
-		trigger = 1;
 		return (new);
 	}
 }
