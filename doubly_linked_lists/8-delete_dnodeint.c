@@ -4,7 +4,8 @@
  * delete_dnodeint_at_index -
  * @head: pointer head
  * @index: index
- *
+ * 
+ * Description: something
  * Return: int
  */
 
