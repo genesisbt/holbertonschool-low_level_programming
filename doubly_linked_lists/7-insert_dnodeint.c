@@ -37,7 +37,7 @@ if (idx == 0)
     *h = new;
     return (new);
 }
-else if (h != NULL)
+else if (*h != NULL)
 {
 	while (search != NULL)
 	{
