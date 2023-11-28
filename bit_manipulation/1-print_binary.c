@@ -2,7 +2,7 @@
 
 /**
  * print_binary - name
- * @n:
+ * @n: first entry
  * Description: something
  * Return: void
  */
