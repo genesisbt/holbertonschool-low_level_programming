@@ -27,30 +27,30 @@ if (new == NULL)
 new->prev = NULL;
 new->next = NULL;
 new->n = n;
-if (*h == NULL && idx == 0)
+if (*h == NULL)
 {
-	trigger = 1;
-	*h = new;
+	if (idx == 0)
+	{
+		trigger = 1;
+		return (new);
+	}
 }
-if (*h != NULL)
+else if (*h != NULL)
 {
 	while (search != NULL)
 	{
 		if (idxcmp == idx)
-		{
+		{	
+			if (search->prev != NULL)
 			search->prev->next = new;
 			new->prev = search->prev;
 			new->next = search;
 			search->prev = new;
-			trigger = 1;
+			return (new);
 		}
 	search = search->next;
 	idxcmp++;
 	}
 }
-
-if (trigger == 0)
-	return (NULL);
-else
-	return (new);
+return (NULL);
 }
