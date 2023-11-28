@@ -19,9 +19,19 @@ int trigger = 0;
 dlistint_t *search = *h;
 dlistint_t *new = malloc(sizeof(dlistint_t));
 
+if (new == NULL)
+{
+	free(new);
+	return (NULL);
+}
 new->prev = NULL;
 new->next = NULL;
 new->n = n;
+if (*h == NULL && idx == 0)
+{
+	trigger = 1;
+	*h = new;
+}
 if (*h != NULL)
 {
 	while (search != NULL)
@@ -38,6 +48,7 @@ if (*h != NULL)
 	idxcmp++;
 	}
 }
+
 if (trigger == 0)
 	return (NULL);
 else
