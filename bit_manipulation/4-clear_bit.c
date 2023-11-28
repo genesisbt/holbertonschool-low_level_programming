@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * clear_bit - 
- * @n: 
- * @: index
+ * clear_bit - name
+ * @n: first
+ * @index: second
  *
  * Description: something
  *
