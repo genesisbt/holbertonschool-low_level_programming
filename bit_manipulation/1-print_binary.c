@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_binary - name 
- * @n: 
+ * print_binary - name
+ * @n:
  * Description: something
  * Return: void
  */
