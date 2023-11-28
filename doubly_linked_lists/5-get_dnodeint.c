@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- * free_dlistint - Function name
+ * get_dnodeint_at_index - Function name
  * @head: first entry
+ * @index: second entry
  * Description: counts the members of a list
  *
  * Return: length of list
@@ -21,7 +22,7 @@ if (head != NULL)
 	{
 		if (n == index)
 		{
-			return(search);
+			return (search);
 		}
 	search = search->next;
 	n++;
