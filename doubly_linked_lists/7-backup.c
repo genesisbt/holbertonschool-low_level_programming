@@ -26,18 +26,15 @@ if (new == NULL)
 new->prev = NULL;
 new->next = NULL;
 new->n = n;
-if (idx == 0)
+if (*h == NULL)
 {
-    new->next = *h;
-    new->prev = NULL;
-
-    if (*h != NULL)
-	        (*h)->prev = new;
-
-    *h = new;
-    return (new);
+	if (idx == 0)
+	{
+		*h = new;
+		return (new);
+	}
 }
-else if (h != NULL)
+else if (*h != NULL)
 {
 	while (search != NULL)
 	{
