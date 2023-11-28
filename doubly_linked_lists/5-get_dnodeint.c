@@ -13,7 +13,7 @@
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-int n = 0;
+unsigned int n = 0;
 dlistint_t *search = head;
 
 if (head != NULL)
@@ -28,4 +28,5 @@ if (head != NULL)
 	n++;
 	}
 }
+return (NULL);
 }
