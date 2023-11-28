@@ -50,6 +50,12 @@ else if (*h != NULL)
 	search = search->next;
 	idxcmp++;
 	}
+	if (search->next == NULL && idxcmp == idx)
+	{
+		new->prev = search;
+		search->next = new;
+		return (new);
+	}
 }
 free(new);
 return (NULL);
