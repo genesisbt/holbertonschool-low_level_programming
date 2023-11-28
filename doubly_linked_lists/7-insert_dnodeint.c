@@ -29,11 +29,8 @@ new->n = n;
 if (idx == 0)
 {
     new->next = *h;
-    new->prev = NULL;
-
     if (*h != NULL)
-	        (*h)->prev = new;
-
+        (*h)->prev = new;
     *h = new;
     return (new);
 }
@@ -43,19 +40,17 @@ else if (*h != NULL)
 	{
 		if (idxcmp == idx)
 		{	
+			new->prev = search->prev;
+			new->next = search;
 			if (search->prev != NULL)
 				search->prev->next = new;
-			if (idx != 0)
-				new->prev = search->prev;
-			new->next = search;
 			search->prev = new;
-			if (idx == 0)
-				*h = new;
 			return (new);
 		}
 	search = search->next;
 	idxcmp++;
 	}
 }
+free(new);
 return (NULL);
 }
