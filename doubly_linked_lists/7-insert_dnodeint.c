@@ -45,6 +45,8 @@ else if (*h != NULL)
 			new->prev = search->prev;
 			new->next = search;
 			search->prev = new;
+			if (idx == 0)
+				*h = new;
 			return (new);
 		}
 	search = search->next;
