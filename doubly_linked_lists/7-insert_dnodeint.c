@@ -30,6 +30,7 @@ if (*h == NULL)
 {
 	if (idx == 0)
 	{
+		*h = new;
 		return (new);
 	}
 }
