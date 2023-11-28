@@ -15,7 +15,6 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 unsigned int idxcmp = 0;
-int trigger = 0;
 dlistint_t *search = *h;
 dlistint_t *new = malloc(sizeof(dlistint_t));
 
