@@ -10,18 +10,21 @@
  * Return: length of list
  */
 
-void free_dlistint(dlistint_t *head)
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-dlistint_t *follow;
+int n = 0;
+dlistint_t *search = head;
 
 if (head != NULL)
 {
-	while (head->next != NULL)
+	while (search != NULL)
 	{
-	follow = head->next;
-	free(head);
-	head = follow;
+		if (n == index)
+		{
+			return(search);
+		}
+	search = search->next;
+	n++;
 	}
-	free(head);
-	}
+}
 }
