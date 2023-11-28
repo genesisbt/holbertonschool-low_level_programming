@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_bit - value of index 
+ * get_bit - value of index
  * @n: entry one
  * @index: entry two
  * Description: something
