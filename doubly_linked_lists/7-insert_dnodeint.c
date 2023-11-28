@@ -41,8 +41,9 @@ else if (*h != NULL)
 		if (idxcmp == idx)
 		{	
 			if (search->prev != NULL)
-			search->prev->next = new;
-			new->prev = search->prev;
+				search->prev->next = new;
+			if (idx != 0)
+				new->prev = search->prev;
 			new->next = search;
 			search->prev = new;
 			if (idx == 0)
