@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 #define BUFFER_SIZE 1024
-/** 
+/**
  * print_error_and_exit - function name
  * @code: first
  * @message: second
@@ -35,7 +35,8 @@ char buffer[BUFFER_SIZE];
 fd_from = open(source_file, O_RDONLY);
 if (fd_from == -1)
 	print_error_and_exit(98, "Error: Can't read from file");
-fd_to = open(dest_file, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+fd_to = open(dest_file, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR
+		| S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 if (fd_to == -1)
 {
 	close(fd_from);
