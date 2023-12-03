@@ -14,9 +14,16 @@
 
 void print_error_and_exit(int code, const char *message, const char *filename) 
 {
-dprintf(2, "%s %s\n", message, filename);
-exit(code);
-}
+	if (filename == NULL)
+	{
+		dprintf(2, "%s\n", message);
+	exit(code);
+	}
+	else
+	{
+		dprintf(2, "%s %s\n", message, filename);
+	exit(code);
+	}
 
 /**
  * copy_file - function name
