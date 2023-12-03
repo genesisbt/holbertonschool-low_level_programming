@@ -21,7 +21,7 @@ void print_error_and_exit(int code, const char *message, const char *filename)
 	}
 	else
 	{
-		dprintf(2, "%s %s\n", message, filename);
+		dprintf(2, "%s%s\n", message, filename);
 	exit(code);
 	}
 }
@@ -52,14 +52,14 @@ fd_to = open(dest_file, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGR
 if (fd_to == -1) 
 	{
 	close(fd_from);
-	print_error_and_exit(99, "Error: Can't write to ", dest_file);
+	print_error_and_exit(99, "Error: Can't write to", dest_file);
 	}
 while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0) 
 	{
 	bytes_written = write(fd_to, buffer, bytes_read);
 	if (bytes_written == -1)
 		{
-		print_error_and_exit(99, "Error: Can't write to ", dest_file);
+		print_error_and_exit(99, "Error: Can't write to", dest_file);
 		}
 	}
 if (bytes_read == -1)
