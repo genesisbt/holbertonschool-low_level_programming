@@ -8,6 +8,7 @@
  * print_error_and_exit - function name
  * @code: first
  * @message: second
+ * @filename: third
  * Description: something
  * return: something
  */
