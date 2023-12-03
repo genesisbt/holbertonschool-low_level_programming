@@ -53,11 +53,17 @@ if (bytes_read == -1)
 if (close(fd_from) == -1 || close(fd_to) == -1)
 	print_error_and_exit(100, "Error: Can't close file descriptor");
 }
-
+/**
+ * main -name
+ * @argc: first
+ * @argv: second
+ * description: something
+ * Return: something
+ */
 int main(int argc, char *argv[])
 {
 if (argc != 3)
 	print_error_and_exit(97, "Usage: cp file_from file_to");
 	copy_file(argv[1], argv[2]);
-	return 0;
+	return (0);
 }
