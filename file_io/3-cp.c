@@ -21,7 +21,7 @@ void print_error_and_exit(int code, const char *message, const char *filename)
 	}
 	else
 	{
-		dprintf(2, "%s%s\n", message, filename);
+		dprintf(2, "%s %s\n", message, filename);
 	exit(code);
 	}
 }
