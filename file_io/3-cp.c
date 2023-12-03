@@ -68,7 +68,7 @@ if (bytes_read == -1)
 	}
 if (close(fd_from) == -1 || close(fd_to) == -1)
 	{
-	print_error_and_exit(100, "Error: Can't close file descriptor", NULL);
+	print_error_and_exit(100, "Error: Can't close fd", NULL);
 	}
 }
 /**
