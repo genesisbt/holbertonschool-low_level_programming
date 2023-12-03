@@ -62,8 +62,8 @@ if (close(fd_from) == -1 || close(fd_to) == -1)
  */
 int main(int argc, char *argv[])
 {
-if (argc != 3)
+if (argc != 3 || argv[1][0] == '\0')
 	print_error_and_exit(97, "Usage: cp file_from file_to");
 copy_file(argv[1], argv[2]);
-return (0);
+return 0;
 }
