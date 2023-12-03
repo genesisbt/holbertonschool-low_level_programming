@@ -12,7 +12,7 @@
  * return: something
  */
 
-void print_error_and_exit(int code, const char *message, const char *filename) 
+void print_error_and_exit(int code, const char *message, const char *filename)
 {
 	if (filename == NULL)
 	{
@@ -39,7 +39,7 @@ void copy_file(const char *source_file, const char *dest_file)
 int fd_from, fd_to;
 ssize_t bytes_read, bytes_written;
 char buffer[BUFFER_SIZE];
-if (access(source_file, F_OK) == -1) 
+if (access(source_file, F_OK) == -1)
 	{
 	print_error_and_exit(98, "Error: Can't read from file", source_file);
 	}
@@ -48,13 +48,14 @@ if (fd_from == -1)
 	{
 	print_error_and_exit(98, "Error: Can't read from file", source_file);
 	}
-fd_to = open(dest_file, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
-if (fd_to == -1) 
+fd_to = open(dest_file, O_WRONLY | O_CREAT |
+O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+if (fd_to == -1)
 	{
 	close(fd_from);
 	print_error_and_exit(99, "Error: Can't write to", dest_file);
 	}
-while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0) 
+while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 	{
 	bytes_written = write(fd_to, buffer, bytes_read);
 	if (bytes_written == -1)
@@ -83,5 +84,5 @@ int main(int argc, char *argv[])
 if (argc != 3 || argv[1][0] == '\0')
 	print_error_and_exit(97, "Usage: cp file_from file_to", NULL);
 copy_file(argv[1], argv[2]);
-return 0;
+return (0);
 }
