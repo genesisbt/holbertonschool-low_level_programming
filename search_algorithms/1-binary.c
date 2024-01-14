@@ -35,8 +35,6 @@ int recursive_binsearch(int *array, int low, int high, int value)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int sizeint = size_t_toint(size);
-	
 	if (array == NULL)
 		return(-1);
 	recursive_binsearch(array, 0, size -1, value);
