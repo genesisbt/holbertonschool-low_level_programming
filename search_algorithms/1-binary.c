@@ -40,21 +40,3 @@ int binary_search(int *array, size_t size, int value)
 	recursive_binsearch(array, 0, size -1, value);
 	return(-1);
 }
-
-/**
- * size_t_toint - transforms a small size_t into int
- * @st: size_t to be turned into int
- *
- * Return: int
- */
-int size_t_toint(size_t st)
-{
-	int number = 0;
-	size_t count;
-
-for (count = 0 ; count <= st; count++)
-	{
-		number++;
-	}
-	return(number);
-}
