@@ -15,10 +15,11 @@ int recursive_binsearch(int *array, int low, int high, int value)
 	int middle;
 	middle = (high - low) / 2;
 
-	if (array[middle] == value)
-		return(middle);
 	if (low != high)
 	{
+	if (array[middle] == value)
+		return(middle);
+
 		if (value < array[middle])
 			return (recursive_binsearch(array, low, middle - 1, value));
 		if (value > array[middle])
