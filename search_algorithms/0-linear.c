@@ -9,14 +9,16 @@
 */
 int linear_search(int *array, size_t size, int value)
 {
-    int c;
+    size_t s;
+    int c=;
 
     if (array == NULL)
         return (-1);
-    for (c = 0 ; c < size - 1 ; c++)
+    for (s = 0 ; s < size - 1 ; s++)
     {
         if (array[c] == value)
         return (c);
+    c++;
     }    
     return(-1);
     }
