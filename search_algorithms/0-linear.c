@@ -9,17 +9,17 @@
 */
 int linear_search(int *array, size_t size, int value)
 {
-    size_t s;
-    int c = 0;
+	size_t s;
+	int c = 0;
 
-    if (array == NULL)
-        return (-1);
-    for (s = 0 ; s < size - 1 ; s++)
-    {
-    printf("Value checked array[%i] = [%i]\n", c, array[c]);
-        if (array[c] == value)
-        return (c);
-    c++;
-    }    
-    return(-1);
-    }
+	if (array == NULL)
+		return (-1);
+	for (s = 0 ; s < size - 1 ; s++)
+	{
+	printf("Value checked array[%i] = [%i]\n", c, array[c]);
+		if (array[c] == value)
+		return (c);
+	c++;
+	}    
+	return(-1);
+	}
