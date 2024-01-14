@@ -13,7 +13,7 @@
 int recursive_binsearch(int *array, int low, int high, int value)
 {
 	int middle;
-	middle = (high - low) / 2;
+	middle = ((high + low) / 2) - low;
 
 	if (low != high)
 	{
