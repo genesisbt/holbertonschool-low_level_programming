@@ -20,7 +20,7 @@ int recursive_binsearch(int *array, int low, int high, int value)
 	if (value < array[middle])
 		recursive_binsearch(array, low, middle - 1, value);
 	if (value > array[middle])
-		recursive_binsearch(array, middle + 1, high);
+		recursive_binsearch(array, middle + 1, high, value);
 	return(-1);
 }
 

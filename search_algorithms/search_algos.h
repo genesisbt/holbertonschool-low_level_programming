@@ -6,5 +6,7 @@
 
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
+int recursive_binsearch(int *array, int low, int high, int value);
+int size_t_toint(size_t st);
 
 #endif
