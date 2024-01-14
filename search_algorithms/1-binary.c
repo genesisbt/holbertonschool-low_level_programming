@@ -17,10 +17,13 @@ int recursive_binsearch(int *array, int low, int high, int value)
 
 	if (array[middle] == value)
 		return(middle);
-	if (value < array[middle])
-		return (recursive_binsearch(array, low, middle - 1, value));
-	if (value > array[middle])
-		return (recursive_binsearch(array, middle + 1, high, value));
+	if (low != high)
+	{
+		if (value < array[middle])
+			return (recursive_binsearch(array, low, middle - 1, value));
+		if (value > array[middle])
+			return (recursive_binsearch(array, middle + 1, high, value));
+	}
 }
 
 /**
