@@ -4,9 +4,9 @@
 * @array: array of numbers to search in
 * @size: size of the array
 * @value: value of the int to search
-
 * Return: the first index where value is located
 */
+
 int linear_search(int *array, size_t size, int value)
 {
 	size_t s;
@@ -21,5 +21,5 @@ int linear_search(int *array, size_t size, int value)
 		return (c);
 	c++;
 	}    
-	return(-1);
+	return (-1);
 	}
