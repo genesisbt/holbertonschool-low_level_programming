@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "search_algos.h"
 
 /**
@@ -16,4 +18,4 @@ int main(void)
     printf("Found %d at index: %d\n\n", 5, binary_search(array, 5, 5));
     printf("Found %d at index: %d\n", 999, binary_search(array, size, 999));
     return (EXIT_SUCCESS);
-}linear_search;
+}
