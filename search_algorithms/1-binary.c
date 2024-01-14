@@ -20,7 +20,7 @@ int recursive_binsearch(int *array, int low, int high, int value)
 		return (-1);
 	}
 	printf("Searching in array: ");
-	while (checker <= high)
+	while (checker < high)
 	{
 		printf("%i, ", array[checker]);
 		checker++;
