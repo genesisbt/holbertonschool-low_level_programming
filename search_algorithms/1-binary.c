@@ -12,14 +12,20 @@
  */
 int recursive_binsearch(int *array, int low, int high, int value)
 {
-	int middle;
+	int middle, checker = low;
 	middle = high + low / 2;
 
 	if (low > high)
 	{
 		return (-1);
 	}
-
+	printf("Searching in array: ");
+	while (checker < high)
+	{
+		printf("%i, ", array[checker]);
+		checker++;
+	}
+	printf("\n");
 	if (array[middle] == value)
 		return(middle);
 	if (value < array[middle])
