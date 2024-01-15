@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * binary_search - searchs for a number in an array
+ * recursive_binsearch - searchs for a number in an array
  * by using the binary search algorithm
  * @array: array to search the value for
  * @low: where the search should start
@@ -13,13 +13,14 @@
 int recursive_binsearch(int *array, int low, int high, int value)
 {
 	int middle, checker = low;
+
 	middle = (high + low) / 2;
 	if (low > high)
 	{
 		return (-1);
 	}
 	printf("Searching in array: ");
-	while (checker < high )
+	while(checker < high )
 	{
 		printf("%i, ", array[checker]);
 		checker++;
@@ -28,10 +29,9 @@ int recursive_binsearch(int *array, int low, int high, int value)
 	if (array[middle] == value)
 		return(middle);
 	if (value < array[middle])
-			return (recursive_binsearch(array, low, middle - 1, value));
+		return (recursive_binsearch(array, low, middle - 1, value));
 	if (value > array[middle])
-			return (recursive_binsearch(array, middle + 1, high, value));
-	
+		return (recursive_binsearch(array, middle + 1, high, value));
 	return (-1);
 }
 
